@@ -1,0 +1,65 @@
+<html>
+    <head>
+    <title>Verificar CEP</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- Adicionando Javascript -->
+    <script src="script.js"> </script>
+    </head>
+    <h1> VERIFICAR CEP </h1>
+    <body>
+    <!-- Inicio do formulario -->
+      <section > 
+        <form method="get" action="."  >
+          <div class="container">
+            <div class="row">
+              <div class="col-6 col-sm-4">
+                <label >Cep
+                <input name="cep" type="text" id="cep" value="" size="20" maxlength="9" class="form-control"/></label><br />
+              </div>
+              
+              <div class="col-6 col-sm-4">
+                <fieldset disabled>
+                  <label>Rua
+                  <input name="rua" type="text" id="rua" size="50" class="form-control"/></label><br />
+                </fieldset>
+              </div>
+              
+              <div class="col-6 col-sm-4">
+                <fieldset disabled>
+                  <label >Bairro
+                  <input name="bairro" type="text"  id="bairro" size="40" class="form-control"/></label><br />
+                </fieldset>
+              </div>
+              <div class="w-100 d-none d-md-block"></div>
+              <div class="col-6 col-sm-4">
+                <fieldset disabled>
+                  <label>Cidade
+                  <input name="cidade" type="text" id="cidade" size="40" class="form-control"/></label><br />
+                </fieldset>
+              </div>
+              
+              <div class="col-6 col-sm-4">
+                <fieldset disabled>
+                  <label>Estado
+                  <input name="uf" type="text" id="uf" size="2" class="form-control"/></label><br /> 
+                </fieldset>  
+              </div>
+              
+              <div class="col-6 col-sm-4">
+                <fieldset disabled>
+                  <label>IBGE
+                  <input name="ibge" type="text" id="ibge" size="8" class="form-control"/></label><br /> 
+                </fieldset>
+              </div>
+
+            </div>
+          </div>
+        </form>
+          <button onclick="pesquisacep(cep.value);" class="btn btn-primary">Verificar</button>
+          <button onclick="limpa_formulário_cep()" class="btn btn-primary">Limpar</button>        
+      </section>
+    </body>
+    
+    </html>
